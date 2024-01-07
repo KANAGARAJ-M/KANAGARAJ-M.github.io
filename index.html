@@ -59,6 +59,17 @@
     .card {
       padding: 2%;
       margin: 2% 2% 2% 2%;
+      position: sticky;
+    }
+
+    .card:hover{
+      position: sticky;
+      border-radius: 40%;
+      container: inherit;
+      background-color: #1e1;
+      border-color: red 5px;
+      transition: all 5s  ease-in-out;
+      display: block;
     }
 
     .card-header {
@@ -75,6 +86,32 @@
       font-weight: 900;
       font-variant-emoji: emoji;
       font-size: xx-large;
+    }
+    .btn{
+      position: sticky;
+      
+    }
+    .btn-shm{
+      position: sticky;
+    }
+    .btn-shm:hover{
+      top: 2%;
+      color: black;
+      background-color: bisque;
+      border-radius: 25%;
+      transition: all 3s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+    }
+    .btn-shm::selection{
+      border: 30%;
+    }
+
+    .Featured{
+      color: black;
+
+    }
+    .Featured:hover{
+      color: crimson;
     }
   </style>
 </head>
@@ -106,10 +143,12 @@
         </div>
       </nav>
     </div>
-
+<div>
+  <!-- <marquee behavior="scroll" direction="up" height="100"></marquee> -->
+</div>
     <div class="main-2">
       <div class="card w3-green ">
-        <div class="card-header w3-hover-border-deep-purple bg-opacity-75 w3-display-topmiddle ">
+        <div class="card-header w3-hover-border-deep-purple bg-opacity-75 w3-display-topmiddle Featured">
           Featured
         </div>
         
@@ -139,7 +178,7 @@
               <p class="card-text">ShareMedia is an photo sharing platform. Everyone can Share the Photos without any
                 Restrictions...</p>
               <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
-              <a href="Apps/ShareMedia/shmain.html" class="btn btn-success">Learn More...</a>
+              <a href="Apps/ShareMedia/shmain.html" class="btn btn-success btn-shm">Learn More...</a>
             </div>
           </div>
         </div>
