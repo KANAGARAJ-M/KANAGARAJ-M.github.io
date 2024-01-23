@@ -37,6 +37,7 @@
       border-radius: 25px;
       border: 25px;
       background-color: grey;
+      box-shadow: 2px 5px #444;
     }
 
     .navbar {
@@ -44,7 +45,7 @@
     }
 
     body {
-      background-color: black;
+      background-color: white;
     }
 
     .nav-link,
@@ -61,9 +62,14 @@
       padding: 2%;
       margin: 2% 2% 2% 2%;
       position: sticky;
+      box-shadow: 2px 2px  #1e1 2px 2px #444;
+      /* text-shadow: 2px 2px 2px  #1e1; */
+      box-shadow: 5px 5px #1e1;
+
     }
 
-    .card:hover {
+    /* .card:hover {
+
       position: sticky;
       border-radius: 40%;
       container: inherit;
@@ -71,11 +77,12 @@
       border-color: red 5px;
       transition: all 5s ease-in-out;
       display: block;
-    }
+    } */
 
     .card-header {
       padding: 2%;
-      color: black;
+      align-content: center;
+      /* color: white; */
       font-weight: 900;
       font-size: x-large;
       font-style: italic;
@@ -91,6 +98,10 @@
 
     .btn {
       position: sticky;
+      background-color: #444;
+      color: white;
+      font-weight: 900;
+      text-shadow: 2px 2px 2px #1e1;
 
     }
 
@@ -101,7 +112,7 @@
     .btn-shm:hover {
       top: 2%;
       color: black;
-      background-color: bisque;
+      background-color: #1e1;
       border-radius: 25%;
       transition: all 3s cubic-bezier(0.075, 0.82, 0.165, 1);
 
@@ -119,11 +130,22 @@
     .Featured:hover {
       color: crimson;
     }
-    .unlocked-eve{
+
+    .unlocked-eve {
       background-color: blue;
-      color: black;
+      color: white;
       font-weight: 700;
-      
+
+    }
+    .card-style{
+      background-color: #444;
+      box-shadow: 2px 2px #2e315f 2px 2px #1e1;
+    }
+    .card-title{
+      color:black;
+      font-weight: 600;
+      font-style: italic;
+      align-content: center;
     }
   </style>
 </head>
@@ -159,15 +181,15 @@
       <!-- <marquee behavior="scroll" direction="up" height="100"></marquee> -->
     </div>
     <div class="main-2">
-      <div class="card w3-green ">
-        <div class="card-header w3-hover-border-deep-purple bg-opacity-75 w3-display-topmiddle Featured">
+      <div class="card card-style">
+        <div class="card-header  w3-display-topmiddle Featured">
           Featured
         </div>
 
         <div class="card-body">
 
           <br>
-          <h5 class="card-title" style="display: inline-block">Event Anouncement -&nbsp;<h4
+          <h5 class="card-title" style="display: inline-block ; color: white; font-weight: 400;">Event Anouncement -&nbsp;<h4
               style="display: inline-block" class="ShareMedia">
               ShareMedia</h4>
           </h5>
@@ -190,7 +212,7 @@
               <p class="card-text">ShareMedia is an photo sharing platform. Everyone can Share the Photos without any
                 Restrictions...</p>
               <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
-              <a href="Apps/ShareMedia/shmain.html" class="btn btn-success btn-shm">Learn More...</a>
+              <a href="Apps/ShareMedia/shmain.html" class="btn btn-shm">Learn More...</a>
             </div>
           </div>
         </div>
